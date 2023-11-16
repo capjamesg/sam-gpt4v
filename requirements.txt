@@ -1,0 +1,5 @@
+autodistill
+autodistill-gpt-4v
+autodistill-grounded-sam
+supervision
+opencv-python
