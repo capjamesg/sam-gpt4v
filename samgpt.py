@@ -3,13 +3,13 @@ from autodistill.detection import CaptionOntology
 from autodistill_grounded_sam import GroundedSAM
 import supervision as sv
 
-from autodistill.core.custom_detection_model import CustomDetectionModel
+from autodistill.core.combined_detection_model import CombinedDetectionModel
 import cv2
 
 classes = ["mercedes", "toyota"]
 
 
-SAMGPT = CustomDetectionModel(
+SAMGPT = CombinedDetectionModel(
     detection_model=GroundedSAM(
         CaptionOntology({"car": "car"})
     ),
